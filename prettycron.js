@@ -164,7 +164,7 @@ if ((!moment || !later) && (typeof require !== 'undefined')) {
    * Given a cronspec, return the human-readable string.
    */
   var toString = function(cronspec) {
-    var schedule = later.parse.cron.parse(cronspec, false);
+    var schedule = later.parse.cron(cronspec, false);
     return scheduleToSentence(schedule['schedules'][0]);
   };
 
@@ -173,7 +173,7 @@ if ((!moment || !later) && (typeof require !== 'undefined')) {
    * (This is just a wrapper for later.js and moment.js)
    */
   var getNext = function(cronspec) {
-    var schedule = later.parse.cron.parse(cronspec, false);
+    var schedule = later.parse.cron(cronspec, false);
     return moment(
         later(60, true).getNext(schedule)
       ).calendar();
