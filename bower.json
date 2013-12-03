@@ -1,0 +1,22 @@
+{
+  "name": "prettycron-scheduler-fork",
+  "main": "prettycron.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/sulmanen/prettycron",
+  "authors": [
+    "Samuli Ulmanen <samuli.ulmanen@rovio.com>"
+  ],
+  "description": "modified for of pretty-cron",
+  "keywords": [
+    "cron",
+    "prettyprint"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
